@@ -22,5 +22,3 @@ for (Account acct : [SELECT Id, Name, Number_Of_Contacts__c FROM Account]) {
 }
 
 System.debug(acctIds);
-
-AccountProcessor.countContacts(acctIds);
