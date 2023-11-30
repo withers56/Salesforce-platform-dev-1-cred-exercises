@@ -15,10 +15,21 @@
 
 // List<Account> myAccts = [SELECT Id FROM Account WHERE Name = 'Williams test'];
 
-List<Id> acctIds = new List<Id>();
+// List<Id> acctIds = new List<Id>();
 
-for (Account acct : [SELECT Id, Name, Number_Of_Contacts__c FROM Account]) {
-    acctIds.add(acct.Id);
-}
+// for (Account acct : [SELECT Id, Name, Number_Of_Contacts__c FROM Account]) {
+//     acctIds.add(acct.Id);
+// }
 
-System.debug(acctIds);
+// System.debug(acctIds);
+
+// AnimalLocator.getAnimalNameById(1);
+
+// calculatorServices.CalculatorImplPort calculator = new  calculatorServices.CalculatorImplPort();
+// Double x = 1.0;
+// Double y = 2.0;
+// Double result = calculator.doAdd(x,y);
+// System.debug(result);
+
+
+System.debug(ParkLocator.Country('Germany'));
