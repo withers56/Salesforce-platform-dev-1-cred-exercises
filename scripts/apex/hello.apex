@@ -32,4 +32,18 @@
 // System.debug(result);
 
 
-System.debug(ParkLocator.Country('Germany'));
+// System.debug(ParkLocator.Country('Germany'));
+
+// Set up a test request
+RestRequest request = new RestRequest();
+// Set request properties
+request.requestUri =
+    'https://yourInstance.my.salesforce.com/services/apexrest/Accounts/001Hp00002gjL0yIAE/contacts';
+request.httpMethod = 'GET';
+// Set other properties, such as parameters
+request.params.put('status', 'Working');
+// more awesome code here....
+// Finally, assign the request to RestContext if used
+RestContext.request = request;
+
+Account testacct = AccountManager.getAccount();
